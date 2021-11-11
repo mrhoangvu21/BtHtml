@@ -1,0 +1,34 @@
+h1{
+    color: #eeaa22;
+    text-align: center;
+
+}
+.section{
+    display:flex;
+   
+}
+.image img{
+    width:600px;
+    height: 400px;
+}
+.tables table {
+    width: 700px;
+    height: 400px;
+    margin-left: 50px;
+    text-align: center;
+    border-collapse:collapse;
+}
+table, th, td{
+    border: 1px solid #ad16a6;
+    
+}
+th {
+    color: #FFFFFF;
+    background-color: #CC6600;
+}
+table tr:nth-child(odd){
+    background-color:#FFEDCA;
+}
+table tr:nth-child(even){
+    background-color:#FFF;
+}

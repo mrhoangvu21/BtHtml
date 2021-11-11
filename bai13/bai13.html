@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bai13.css">
+    <title> Phiếu Đăng ký du lịch</title>
+</head>
+<body>
+    <h2>Đăng ký du lịch</h2>
+    <form>
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td><label for="fullname"></label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Nhập tên"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><label for="address">
+                <input type="text" id="address" name="address" placeholder="Nhập địa chỉ" ></td>
+        </tr>
+        <tr>
+            <td>Số điện thoại</td>
+            <td>
+            <label for="phonenumber">
+                <input type="text" id="phonenumber" name="phonebumber" maxlength="10" placeholder="Nhập số điện thoại" pattern="[0-9]{10}"></td>                  
+        </tr> 
+        <tr>
+            <td>Khách Việt Nam</td>
+            <td><input name="checked" id="checked" type="checkbox">
+                <label for="checked"></label></td>
+            </tr>
+            <tr>
+                <td>Chọn tour</td>
+                <td>
+                    <select name="tour" id="">
+                    <optgroup label="Miền Bắc"> 
+                        <option value="1">Nha Trang - Đà Lạt</option>
+                        <option value="2">Buôn Mê Thuột - Gia Lai - Kon Tum</option>
+                    </optgroup>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Phương tiện</td>
+                <td>
+                    <input name="vehicle" value="plane" type="radio">
+                    <label for="plane">Máy bay</label>
+                    <input name="vehicle" value="car" type="radio">
+                    <label for="car">Ô tô</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend> Chọn sản phẩm tham gia </legend>
+                        <div class="center">
+                            <label for="">Người lớn</label>
+                            <input class="width" type="text" name="" id="" placeholder="6">
+                            <label for="">Trẻ em</label>
+                            <input class="width" type="text" placeholder="4">
+                        </div>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú thêm</td>
+                <td>
+                    <textarea class="content">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="center" colspan="2"><button onclick="login()">Đăng nhập</button></td>
+            </tr>
+            <tr>
+                <td class="center-color" colspan="2" id="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script>
+    function login(e) {
+        document.getElementById("submit").innerHTML = "Bạn đã đăng ký thành công !!!";
+        e.preventDefault();
+    }
+</script>
+
+</html>

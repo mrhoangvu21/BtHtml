@@ -1,0 +1,35 @@
+body {
+    font-family:  Tahoma;
+    font-size: 12px;
+}
+h2 {
+    text-align: center;
+    color: #ff0000;
+}
+
+table {
+    width:60%;
+    height: 400px;
+    margin: auto;
+}
+table, tr, th, td {
+    border: 1px solid #ff0000;
+    border-collapse: collapse;
+}
+th {
+    color: #FFF;
+    background-color: #CC0033;
+    font-weight: bold;
+}
+.content {
+    color: #ff0000;
+}
+
+tr :nth-last-child(-n+2) {
+    text-align: center;
+}
+
+.dots :last-child {
+    text-align: left; 
+    
+}
